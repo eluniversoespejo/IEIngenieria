@@ -4,6 +4,7 @@
   --amarillo-oscuro: #EAB817;
   --amarillo-claro: #F9DC07;
   --gris: #717171;
+  --gris-claro:#f0f0f0;
   --negro: #000;
   --blanco: #FFF;
 }
@@ -11,7 +12,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--azul-oscuro);
-  background-color: #ffffff;
+  background-color: var(--blanco);
 }
 
 .layout_padding {
@@ -47,7 +48,7 @@ body {
   text-align: center;
   width: 145px;
   outline: none;
-  color: #f7f7f7;
+  color: var(--blanco);
   border: 1px solid transparent;
 }
 
@@ -74,6 +75,7 @@ body {
 .custom_heading {
   text-align: center;
   font-weight: bold;
+  font-size: 25px;
 }
 
 .custom_heading-text {
@@ -84,7 +86,7 @@ body {
 /*header section*/
 .hero_area {
   height: 98vh;
-  background-color: #f7f7f7;
+  background-color: var(--gris-claro);
 }
 
 .hero_area.sub_pages {
@@ -111,7 +113,7 @@ body {
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link:hover,
 .custom_nav-container.navbar-expand-lg .navbar-nav .dropdown-item:hover{
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--amarillo-oscuro);
   border-radius: 15px;
 }
 
@@ -139,7 +141,7 @@ a:focus {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
-  color: #fafcfd;
+  color: var(--blanco);
 }
 
 .custom_nav-container .nav_search-btn {
@@ -167,7 +169,7 @@ a:focus {
 .navbar-brand span {
   font-size: 20px;
   font-weight: 700;
-  color: #2e2e2d;
+  color: var(--gris);
   margin-top: 5px;
 }
 
@@ -189,7 +191,7 @@ a:focus {
   display: inline-block;
   padding: 5px 15px;
   background-color: var(--azul-claro);
-  color: #f7f7f7;
+  color: var(--blanco);
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -227,7 +229,9 @@ a:focus {
   background-repeat: no-repeat;
 }
 
-.slider_item-container .slider_item-detail {}
+.slider_item-container .slider_item-detail {
+  margin: 2%;
+}
 
 .slider_item-detail h1 {
   font-weight: 700;
@@ -242,7 +246,7 @@ a:focus {
 .slider_call-btn {
   display: inline-block;
   padding: 8px 20px;
-  background-color: #edb040;
+  background-color: var(--amarillo-oscuro);
   color: #fefdfd;
   border-radius: 20px;
 }
@@ -289,6 +293,8 @@ a:focus {
 
 /* service section */
 .service_section .card .card-img-top {
+  font-size: 50px;
+  color: var(--amarillo-oscuro);
   width: 50px;
   margin: 55px auto 5px auto;
 }
@@ -397,7 +403,7 @@ a:focus {
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: center;
-  background-color: #292727;
+  background-color: var(--gris);
 }
 
 .client_section .custom_carousel-control .carousel-control-prev:hover,
@@ -499,6 +505,25 @@ a:focus {
 
 /* end info section */
 
+.social_container .social-box,
+.social_container h5{  
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 7%;
+  color: var(--azul-oscuro);
+  font-size: 16px;
+}
+
+.social_container h5{
+  margin-right: 8%;
+}
+
+.social_container .social-box a{
+  margin-right:1%;
+  font-size: 30px;
+  color: var(--azul-oscuro)
+}
 
 /* footer section*/
 
