@@ -72,10 +72,18 @@ body {
   background-color: transparent;
 }
 
+.custom_heading_img{
+  width: auto;
+}
+
 .custom_heading {
   text-align: center;
   font-weight: bold;
   font-size: 25px;
+}
+
+.custom_heading-text-justify{
+  text-align: justify;
 }
 
 .custom_heading-text {
@@ -85,7 +93,7 @@ body {
 
 /*header section*/
 .hero_area {
-  height: 98vh;
+  height: 23vh;
   background-color: var(--gris-claro);
 }
 
@@ -105,7 +113,7 @@ body {
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link,
 .custom_nav-container.navbar-expand-lg .navbar-nav .dropdown-item {
-  padding: 10px 30px;
+  padding: 10px 15px;
   color: var(--azul-oscuro);
   text-align: center;
   transition: all 0.5s;
@@ -162,7 +170,7 @@ a:focus {
 }
 
 .navbar-brand img {
-  width: 15vw;
+  width: 200px;
   margin-right: 5px;
 }
 
@@ -182,9 +190,14 @@ a:focus {
   outline: none;
 }
 
-.custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/menu.png);
-  background-size: 55px;
+.custom_nav-container .navbar-toggler .menu-movil{
+  font-size: 40px;
+  color: var(--azul-oscuro);
+  transition: all 0.5s;
+}
+
+.custom_nav-container .navbar-toggler .menu-movil:hover{
+  color: var(--amarillo-oscuro);
 }
 
 .quote_btn-container a {
@@ -424,9 +437,9 @@ a:focus {
 /* contact section */
 
 .contact_section {
-  background-image: url(../images/orange-dish.png);
+  background-image: url(../images/Inge.png);
   background-repeat: no-repeat;
-  background-size: 215px;
+  background-size: 280px;
   background-position: right center;
 }
 
@@ -505,6 +518,10 @@ a:focus {
 
 /* end info section */
 
+.social_container{
+  margin-top: 1%;
+}
+
 .social_container .social-box,
 .social_container h5{  
   display: flex;
@@ -522,7 +539,12 @@ a:focus {
 .social_container .social-box a{
   margin-right:1%;
   font-size: 30px;
-  color: var(--azul-oscuro)
+  color: var(--azul-oscuro);
+  transition: all 0.5s;
+}
+
+.social_container .social-box a:hover{
+  color: var(--amarillo-oscuro);
 }
 
 /* footer section*/
